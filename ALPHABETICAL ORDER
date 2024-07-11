@@ -1,0 +1,16 @@
+import java.util.Arrays;
+public class AlphabeticalOrder {
+    public static void main(String[] args) {
+        String[] words = {"Apple", "Banana", "Orange", "Kiwi", "Grapes"};
+        Arrays.sort(words);
+        System.out.println("Ascending Order:");
+        for (String word : words) {
+            System.out.println(word);
+        }
+        Arrays.sort(words, (a, b) -> b.compareTo(a));
+        System.out.println("\nDescending Order:");
+        for (String word : words) {
+            System.out.println(word);
+        }
+    }
+}
