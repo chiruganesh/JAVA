@@ -1,0 +1,26 @@
+public class CompositeNumberCounter {
+    public static void main(String[] args) {
+        int[] array = {4, 7, 9, 10, 11, 12, 15};
+        int count = 0;
+
+        for (int num : array) {
+            if (isComposite(num)) {
+                count++;
+            }
+        }
+
+        System.out.println("Number of composite numbers in the array: " + count);
+    }
+
+    public static boolean isComposite(int num) {
+        if (num < 2) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
