@@ -1,0 +1,16 @@
+public class ValidityChecker {
+    public static void main(String[] args) {
+        String input = "Your input string here";
+        
+        if (isValid(input)) {
+            System.out.println("Input is valid.");
+        } else {
+            System.out.println("Input is not valid.");
+        }
+    }
+    
+    public static boolean isValid(String input) {
+
+        return true; // Change this to your validation result
+    }
+}
